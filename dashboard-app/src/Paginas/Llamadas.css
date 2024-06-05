@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.llamadas-container {
+  padding: 20px;
+  width: 70%;
+  margin: 30px auto;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);/* Fondo claro */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40; /* Color oscuro */
+}
+
+/* Botones */
+.button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.btn-call-next {
+  background-color: #28a745; /* Color éxito */
+}
+
+.button.btn-call-next:hover {
+  background-color: #218838; /* Sombra más oscura de éxito */
+}
+
+.button.btn-toggle-queue {
+  background-color: #17a2b8; /* Color info */
+}
+
+.button.btn-toggle-queue:hover {
+  background-color: #138496; /* Sombra más oscura de info */
+}
+
+.button.btn-finish {
+  background-color: #dc3545; /* Color peligro */
+}
+
+.button.btn-finish:hover {
+  background-color: #c82333; /* Sombra más oscura de peligro */
+}
+
+/* Listas de tickets atendidos y en espera */
+.attended-tickets, .queue-list {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #dee2e6; /* Borde claro */
+  border-radius: 5px;
+}
+
+/* Títulos de listas */
+.attended-tickets h2, .queue-list h2 {
+  font-size: 20px;
+  color: #343a40; /* Color oscuro */
+  margin-bottom: 10px;
+}
+
+/* Tickets individuales */
+.attended-tickets p, .queue-list p {
+  font-size: 16px;
+  color: #495057; /* Color secundario */
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #dee2e6; /* Divisor entre tickets */
+}
+
+.attended-tickets p:last-child, .queue-list p:last-child {
+  border-bottom: none; /* Sin borde inferior en el último elemento */
+}

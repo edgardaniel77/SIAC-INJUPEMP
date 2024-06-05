@@ -1,0 +1,88 @@
+/* Inicio.css */
+.inicio-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía estándar de Bootstrap */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);  /* Fondo blanco clásico de Bootstrap */
+  border-radius: 0.25rem; /* Bordes redondeados sutiles */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* Sombra ligera para profundidad */
+  overflow: hidden;
+}
+
+.botones-cola {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.botones-cola button {
+  padding: 0.375rem 0.75rem; /* Padding típico de Bootstrap para botones */
+  margin: 0 5px;
+  font-size: 1rem;
+  background-color:  #007bff; /* Azul primario de Bootstrap */
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem; /* Radio de borde típico de Bootstrap */
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out; /* Transición rápida para interacción */
+}
+
+.botones-cola button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.datos-hoy {
+  margin-bottom: 20px;
+}
+
+.datos-hoy h2 {
+  margin-bottom: 0.5rem; /* Consistente con el espaciado vertical de Bootstrap */
+}
+
+.datos-hoy table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* Fondo blanco para las tablas */
+  margin-bottom: 1rem; /* Espacio debajo de la tabla */
+}
+
+.datos-hoy th,
+.datos-hoy td {
+  padding: 0.75rem; /* Espaciado interno de celdas en Bootstrap */
+  border: 1px solid #dee2e6; /* Bordes sutiles para las celdas */
+  text-align: left;
+}
+
+.datos-hoy th {
+  background-color: #e9ecef; /* Color de fondo para encabezados de tabla */
+}
+
+.grafica-comparacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Alineación de los elementos de la gráfica */
+  justify-content: space-around; /* Distribución de espacio alrededor de los elementos */
+}
+
+.grafica-comparacion h2 {
+  width: 100%;
+  text-align: center; /* Centrado de títulos para gráficas */
+}
+
+.chart-container {
+  flex-basis: 45%; /* Base para la flexibilidad de las gráficas */
+  margin-bottom: 20px;
+}
+
+/* Responsive Design ajustado para el estilo de Bootstrap */
+@media (max-width: 768px) {
+  .grafica-comparacion {
+    flex-direction: column; /* Columna en pantallas pequeñas */
+    align-items: center; /* Centrado horizontal */
+  }
+
+  .chart-container {
+    width: 100%; /* Anchura completa en pantallas pequeñas */
+  }
+}

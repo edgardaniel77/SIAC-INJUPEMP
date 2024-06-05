@@ -1,0 +1,84 @@
+/* Estilos para el contenedor principal */
+.seguridad-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);/* Colores más oscuros */
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos para el selector de vista */
+.vista-selector {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para los botones del selector de vista */
+.vista-selector .btn {
+  margin-right: 10px; /* Ajuste de margen entre botones */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #157da0; /* Color verde */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para los botones del selector de vista al pasar el cursor */
+.vista-selector .btn:hover {
+  background-color: #4580a0; /* Color verde más oscuro */
+}
+
+
+/* Estilos para la tarjeta */
+.card {
+  width: 70%;
+  background-color: #f9f9f9; /* Color de fondo más claro */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+  margin-bottom: 10px;
+  color: #333; /* Color de texto más oscuro */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  padding: 40px;
+}
+
+/* Estilos para los grupos de formularios */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de verificación de formularios */
+.form-check {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón principal */
+.btn-primary {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4c6daf; /* Color verde */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para el botón principal al pasar el cursor */
+.btn-primary:hover {
+  background-color: #1671aa; /* Color verde más oscuro */
+}

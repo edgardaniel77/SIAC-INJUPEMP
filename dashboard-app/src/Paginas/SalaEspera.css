@@ -1,0 +1,97 @@
+/* SalaEspera.css */
+
+.sala-espera-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  width: 98%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: left; /* Changed from overflow to left */
+  margin-bottom: 40px;
+  color: #0084ffb8;
+  width: 80%; /* Ensure the header takes the full width */
+  font-size: 1.1em; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.ticket-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #379af6eb;
+}
+
+.ticket-list, .advertisement {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px;
+}
+
+.ticket-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.ticket-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.ticket-list li:last-child {
+  border-bottom: none;
+}
+
+.ticket-list li strong {
+  color: #e43f3f;
+}
+
+.ticket-list li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.advertisement img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.advertisement h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .ticket-section {
+    flex-direction: column;
+  }
+
+  .ticket-list, .advertisement {
+    margin: 10px 0;
+  }
+
+  .ticket-list li {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

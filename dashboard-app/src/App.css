@@ -1,0 +1,59 @@
+/* Estilos generales para la aplicación */
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Bootstrap default */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+  background-image: url('/src/imagenes/Fondo7.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Estilos para la barra lateral */
+
+
+.nav-item {
+  padding: 15px 20px; /* Ajuste de padding para mayor área de clic */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Transición suave del color de fondo */
+}
+
+.nav-item:hover {
+  background-color: #333; /* Color de hover más oscuro para mejor contraste */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+
+/* Media queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Sidebar ocupa todo el ancho en dispositivos móviles */
+    min-height: 60px; /* Altura mínima reducida para dispositivos móviles */
+    flex-direction: row; /* Cambio de orientación a horizontal */
+    overflow-x: auto; /* Habilitar desplazamiento horizontal si es necesario */
+    align-items: center; /* Alinear elementos verticalmente */
+  }
+
+  .nav-item {
+    padding: 10px; /* Reducir padding en dispositivos móviles */
+    display: inline-block; /* Asegurar que los elementos sean en línea */
+  }
+
+  .main-content {
+    padding: 10px; /* Ajustar padding en el contenido principal */
+  }
+}

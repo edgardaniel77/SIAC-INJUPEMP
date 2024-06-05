@@ -1,0 +1,118 @@
+/* Estilos generales del contenedor */
+.gestion-usuarios-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);  /* Fondo blanco para mayor claridad y limpieza */
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Sombra ligera para una apariencia sutil */
+}
+
+/* Estilo para los formularios */
+.formulario-usuario {
+  background: #f8f8f8;
+  padding: 40px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.formulario-usuario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Texto en negrita para mayor legibilidad */
+}
+
+/* Estilo para los inputs y selects */
+.formulario-usuario input[type="text"],
+.formulario-usuario input[type="email"],
+.formulario-usuario input[type="password"],
+.formulario-usuario select {
+  width: 100%; /* Aprovechar todo el ancho disponible */
+  padding: 0.375rem 0.75rem; /* Padding estándar de Bootstrap */
+  margin-top: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #e9ecef; /* Fondo suave para distinguir fácilmente el input */
+}
+
+/* Botón para acciones del formulario */
+.boton-submit {
+  background-color: #28a745; /* Verde de Bootstrap para acciones positivas */
+  color: white;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.boton-submit:hover {
+  background-color: #218838;
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-content h2 {
+  color: #333;
+}
+
+/* Botones dentro del modal */
+.modal-content button {
+  background-color: #dc3545; /* Rojo de Bootstrap para acciones negativas */
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #c82333;
+}
+
+/* Lista de usuarios */
+.lista-usuarios li {
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.lista-usuarios p {
+  margin: 5px 0;
+}
+
+.lista-usuarios button {
+  background-color: #007bff; /* Azul de Bootstrap para acciones primarias */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.lista-usuarios button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,129 @@
+/* Estilos base para el contenedor y los textos */
+.display-container {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Alineado con la tipografía de Bootstrap */
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #e6e6e6); /* Gradiente más suave y profesional */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más ligera para un efecto suave */
+  overflow: hidden;
+}
+/* Configuración del teclado numérico */
+.numeric-keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px;
+  margin: 0 auto; /* Centra el teclado numérico horizontalmente */
+  padding: 10px;
+  transform: translateX(180px); /* Mueve el teclado 50px a la izquierda */
+}
+
+
+/* Aplicar esta regla específica al botón cero */
+.numeric-button.zero {
+  grid-column: 4; /* coloca el botón cero en la cuarta columna */
+  align-self: center; /* centra el botón verticalmente */
+}
+
+/* Estilos para botones numéricos */
+.numeric-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 4px; /* Centra el botón dentro de su contenedor */
+}
+
+.numeric-button.zero {
+  grid-column: 2 / span 1; /* Centra el botón cero en la segunda columna */
+}
+
+.numeric-button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3; /* Efecto hover coherente con los estilos de Bootstrap */
+}
+
+/* Estilos de texto y títulos */
+h1, h2 {
+  color: #343a40; /* Color de texto oscuro de Bootstrap */
+  text-align: center;
+}
+
+/* Estilización de formularios y entradas de texto */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ced4da; /* Borde estándar de Bootstrap */
+  background: #ffffff; /* Fondo blanco para claridad */
+}
+
+/* Botones generales con estilos modernos */
+.button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #17a2b8; /* Azul turquesa de Bootstrap */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+  background-color: #138496; /* Oscurecer en hover */
+}
+
+/* Iconos de FontAwesome integrados en botones */
+/* Estilos para botones con iconos de FontAwesome */
+.fa-user-circle, .fa-user, .fa-money-bill-alt, .fa-book, .fa-hand-holding-usd, .fa-thumbs-up, .fa-user-alt, .fa-print {
+  margin-right: 8px;
+  color: #007bff; /* Color principal del icono que corresponde al azul de Bootstrap */
+}
+
+/* Estilos específicos para los botones que contienen estos iconos */
+.selection-button, .print-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px; /* Aumenta el padding para botones más grandes y fáciles de clicar */
+  margin: 10px 5px; 
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+  background-color: #17a2b8;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave para cambios de estado */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.selection-button:hover, .print-button:hover {
+  background-color: #138496;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px); /* Efecto de levitación al pasar el cursor */
+}
+
+.print-button {
+  background-color: #6c757d;
+}
+
+.print-button:hover {
+  background-color: #5a6268;
+}

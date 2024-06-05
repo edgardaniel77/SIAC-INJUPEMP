@@ -1,0 +1,70 @@
+/* Estilos para el contenedor principal del formulario de inicio de sesión */
+.login-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Centrado automático dentro de las coordenadas definidas */
+  width: 25%; /* Ancho del contenedor */
+  min-height: fit-content; /* Ajusta la altura al contenido, manteniéndolo más flexible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+}
+
+/* Estilos para el logo del formulario de inicio de sesión */
+.login-logo {
+  width: 100%; /* Ancho máximo del logo */
+  height: auto; /* Mantener la relación de aspecto */
+  margin-bottom: 20px; /* Espacio entre el logo y el formulario */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+  width: 90%; /* Ancho del formulario */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones de inicio de sesión y recuperación de contraseña */
+.login-button, .recover-link {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para el botón de inicio de sesión y recuperación de contraseña al pasar el cursor */
+.login-button:hover, .recover-link:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el enlace de recuperación de contraseña */
+.recover-link {
+  background-color: #6c757d; /* Ligeramente diferente para distinguir */
+  text-align: center;
+}
+
+/* Estilos para la visualización del código OTP */
+.otp-display {
+  margin-top: 10px;
+  color: #555;
+}

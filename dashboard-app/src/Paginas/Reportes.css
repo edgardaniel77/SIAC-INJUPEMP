@@ -1,0 +1,86 @@
+/* Estilos generales para el contenedor de reportes */
+.reportes-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilos para las secciones del formulario */
+.formulario-seccion {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-seccion label {
+  margin-right: 10px;
+  font-weight: bold;
+  flex: 0 0 200px; /* Asegura que los labels tengan un ancho fijo */
+  text-align: right;
+}
+
+/* Estilos para los selectores (desplegables) */
+select {
+  padding: 10px;
+  width: 50%; /* Ajustable según la necesidad */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de envío */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Pequeños ajustes para mejorar la legibilidad y accesibilidad */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}

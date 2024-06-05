@@ -1,0 +1,75 @@
+/* General Styles for Configurations */
+.configuraciones-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: whitesmoke; 
+}
+
+.configuraciones-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Tab buttons and form buttons shared styles */
+.tabs button, .configuraciones-container button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active, .configuraciones-container button:hover {
+  background-color: #0056b3; /* Darker blue for active/hover states */
+}
+
+.tabs button:not(.active) {
+  background-color: #007bff; /* Lighter blue for inactive tabs */
+}
+
+.configuraciones-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Specific button colors for different actions */
+.configuraciones-container button:nth-child(1) { background-color: #007bff; }
+.configuraciones-container button:nth-child(2) { background-color: #2889a7; }
+.configuraciones-container button:nth-child(3) { background-color: #3492d5; }
+.configuraciones-container button:nth-child(4) { background-color: #19a9a4; }
+
+/* Styling for different sections and content */
+.tab-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tab-content > div {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tabs, .tab-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs button, .configuraciones-container button {
+    margin: 5px;
+    width: 100%; /* Full width for better mobile usability */
+  }
+}
